@@ -1,4 +1,5 @@
-global.win = false;
-
+global.win = false
+global.playerX = oPlayer.x
+global.playerY = oPlayer.y
 //buffs
-global.speedBUFF = 1;
+global.speedBUFF = 1

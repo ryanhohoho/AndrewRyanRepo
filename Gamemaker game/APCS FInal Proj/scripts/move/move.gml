@@ -17,6 +17,7 @@ function move() {
 		vspeed=yv*global.speedBUFF
 		hspeed=xv*global.speedBUFF
 	//}
-
+		global.playerX = oPlayer.x
+		global.playerY = oPlayer.y
 
 }
