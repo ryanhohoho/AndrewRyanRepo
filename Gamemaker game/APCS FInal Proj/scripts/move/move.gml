@@ -5,22 +5,28 @@ function move() {
 		var xv=0
 		var yv=0
 
-		if keyboard_check(ord("W"))
-		    yv-=10 
 		if keyboard_check(ord("A"))
 		    xv-=10
-		if keyboard_check(ord("S"))
-		    yv+=10
-		if keyboard_check(ord("D")) {
+		if keyboard_check(ord("D")) 
 		    xv+=10
+		if keyboard_check(vk_space) {
+			gravitas = 1
+			
 		}
-	
-		vspeed=yv*global.speedBUFF
+			
+		//jump code
+		if gravitas {
+			yv -= magnitude
+			if ! position_meeting(x, y+10, oWall)
+				magnitude --
+			else if gravitas = 1
+				gravitas = -1
+					//RYAN REMEMBER TO TRASH THIS A BIT AND ADD GRAVITY INSTEAD OF JUST JUMP OK?
+		}
+		
+		vspeed=yv
 		hspeed=xv*global.speedBUFF
-	//}
-		global.playerX = oPlayer.x
-		global.playerY = oPlayer.y
-		
-		
+
+
 
 }

@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sWhitePixel",
-    "path": "sprites/sWhitePixel/sWhitePixel.yy",
+    "name": "sGrass",
+    "path": "sprites/sGrass/sGrass.yy",
   },
   "solid": true,
   "visible": true,
