@@ -11,13 +11,16 @@ function move() {
 		    xv-=10
 		if keyboard_check(ord("S"))
 		    yv+=10
-		if keyboard_check(ord("D"))
+		if keyboard_check(ord("D")) {
 		    xv+=10
+		}
 	
 		vspeed=yv*global.speedBUFF
 		hspeed=xv*global.speedBUFF
 	//}
 		global.playerX = oPlayer.x
 		global.playerY = oPlayer.y
+		
+		
 
 }
