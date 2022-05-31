@@ -9,7 +9,7 @@ function move(xv, yv) {
 		    xv+=10
 		if keyboard_check(vk_space)  {
 			gravitas = 1
-			yv = 0
+			oPlayer.yv = 0
 			
 		}
 			
@@ -17,16 +17,16 @@ function move(xv, yv) {
 		if gravitas {
 			yv -= magnitude 
 		}
-					//RYAN REMEMBER TO TRASH THIS A BIT AND ADD GRAVITY INSTEAD OF JUST JUMP OK?
 		
 		
+
 		vspeed=yv
-		hspeed=xv*global.speedBUFF
 		
+		hspeed=xv
 		if hspeed >= 0
-			image_xscale = 1
-		else
 			image_xscale = -1
+		else
+			image_xscale = 1
 
 
 }
