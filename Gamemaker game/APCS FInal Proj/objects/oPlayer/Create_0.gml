@@ -1,5 +1,7 @@
-gravitas = -1
-magnitude = 20
-yv = 0
-xv = 0
+g=1
+vx=0
+vy=0
+xmax=15
+jump=-25
 health = 3
+

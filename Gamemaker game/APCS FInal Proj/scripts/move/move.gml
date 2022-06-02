@@ -2,12 +2,12 @@ function move(xv, yv) {
 	//efficient code i learned from mr Janetka! also tunes with my speed buff variable and plays wierd noise
 	//if global.win=false {
 		//move()
-
+//not used anymore, bad
 		if keyboard_check(ord("A"))
 		    xv-=10
 		if keyboard_check(ord("D")) 
 		    xv+=10
-		if keyboard_check(vk_space)  {
+		if keyboard_check(vk_space) and (place_meeting(oPlayer.x + 10, oPlayer.y+10, oWall) or place_meeting(oPlayer.x - 10, oPlayer.y+10, oWall)) {
 			gravitas = 1
 			oPlayer.yv = 0
 			
