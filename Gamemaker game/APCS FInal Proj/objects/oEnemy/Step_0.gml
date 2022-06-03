@@ -25,7 +25,7 @@ if image_index <= 0.07 {
 }
 //if near wall jump up the wall
 if place_meeting(x + sign(vx), y, oWall) {
-	vy = -20
+	vy = -10
 }
 y += vy
 x += vx

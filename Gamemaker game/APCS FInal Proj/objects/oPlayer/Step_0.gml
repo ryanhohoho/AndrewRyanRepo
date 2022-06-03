@@ -46,13 +46,12 @@ if place_meeting(x+sign(vx), y, oWall) and vy > 0
 // damaged loop
 
 if downed >=0 {
-	health--
-	for(var d = 0; d <=50; d++)
+	for(var d = 0; d <=500; d++)
 		damaged(d)
 }
 
 //death situations
 
-if y > 900 {
+if y > 11000 {
 	health = 0
 }

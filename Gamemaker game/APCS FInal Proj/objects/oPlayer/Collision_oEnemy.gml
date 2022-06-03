@@ -2,6 +2,7 @@
 drY = instance_nearest(x,y, oEnemy).y - y
 if drY > 0 {
 	instance_nearest(x,y, oEnemy).dead = 1
+	vy=jump
 }
 
 //getting hit if not already hit

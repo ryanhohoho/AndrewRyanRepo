@@ -1,7 +1,7 @@
 g=1
 vx=0
 vy=0
-xmax=15
+xmax=10
 jump=-25
 health = 3
 downed = -1

@@ -11,7 +11,7 @@ yscale=height/room_height
 wallId=0
 playerId=0
 bossId=0
-minionId=0
+enemyId=0
 
 
 enemyCount=0
