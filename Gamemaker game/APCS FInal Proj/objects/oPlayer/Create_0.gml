@@ -4,4 +4,6 @@ vy=0
 xmax=15
 jump=-25
 health = 3
-
+downed = -1
+drX = 0
+drY = 0

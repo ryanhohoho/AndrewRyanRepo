@@ -1,0 +1,15 @@
+//detect if it is stomped on
+drY = instance_nearest(x,y, oEnemy).y - y
+if drY > 0 {
+	instance_nearest(x,y, oEnemy).dead = 1
+}
+
+//getting hit if not already hit
+if instance_nearest(x,y, oEnemy).dead != 1
+	downed = 1
+dirX = x - instance_nearest(x,y, oEnemy).x
+//push away 
+vx = 20*sign(dirX)
+if !place_meeting(x + vx, y, oWall)
+	x += vx
+

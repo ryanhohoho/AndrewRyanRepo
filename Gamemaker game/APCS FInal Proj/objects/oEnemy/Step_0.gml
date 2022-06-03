@@ -12,16 +12,26 @@ else {
 	vy=0
 }
 //seeing if moving left or right
-if image_index = 1 {
-	decision = random(4)
-	if decision < 2 {
-		vx = -2
-		image_xscale = 1
+decision = real(random(4))
+if image_index <= 0.07 {
+	if decision >= 1.5 {
+		vx = -.5
+		image_xscale = -5
 	}
 	else {
-		vx = 2
-		image_xscale = -1
+		vx = .5
+		image_xscale = 5
 	}
+}
+//if near wall jump up the wall
+if place_meeting(x + sign(vx), y, oWall) {
+	vy = -20
 }
 y += vy
 x += vx
+//death code
+if dead > 0 
+	image_alpha -= 0.08
+
+if image_alpha <= 0 
+	instance_destroy(self)
