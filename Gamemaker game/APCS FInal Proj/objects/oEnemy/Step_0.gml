@@ -33,5 +33,7 @@ x += vx
 if dead > 0 
 	image_alpha -= 0.08
 
+if y > 11000
+	instance_destroy(self)
 if image_alpha <= 0 
 	instance_destroy(self)

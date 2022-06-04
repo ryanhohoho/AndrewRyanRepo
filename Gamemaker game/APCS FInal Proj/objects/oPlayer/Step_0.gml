@@ -13,16 +13,16 @@ if keyboard_check_pressed(vk_space) and (place_meeting(x,y+1,oWall) or place_mee
 
 //left right
 vx=0
-if !place_meeting(x,y+1,oWall) {
-	if keyboard_check(ord("A")) {
-		vx-=xmax
-		image_xscale = 1
-	}
-	if keyboard_check(ord("D"))  {
-		vx+=xmax
-		image_xscale = -1
-	}
+
+if keyboard_check(ord("A")) {
+	vx-=xmax
+	image_xscale = 1
 }
+if keyboard_check(ord("D"))  {
+	vx+=xmax
+	image_xscale = -1
+}
+
 
 if !place_meeting(x+vx,y,oWall)
   x+=vx

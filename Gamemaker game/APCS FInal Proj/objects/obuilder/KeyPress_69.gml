@@ -1,0 +1,1 @@
+instance_create_depth(oPlayer.x, oPlayer.y - 1000, 1, oEnemy)
