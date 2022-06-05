@@ -1,9 +1,11 @@
 g=1
 vx=0
 vy=0
-xmax=10
-jump=-25
+xmax=8
+jump=-18
 health = 3
 downed = -1
 drX = 0
 drY = 0
+sizeX = 1
+sizeY = 1

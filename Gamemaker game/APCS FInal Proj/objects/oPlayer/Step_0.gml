@@ -23,3 +23,4 @@ if downed >=0 {
 if y > 11000 {
 	health = 0
 }
+show_debug_message(sizeX)
