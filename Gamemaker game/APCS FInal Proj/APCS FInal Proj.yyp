@@ -2,7 +2,6 @@
   "resources": [
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},"order":7,},
     {"id":{"name":"mMapPlace","path":"scripts/mMapPlace/mMapPlace.yy",},"order":4,},
-    {"id":{"name":"oParentCollision","path":"objects/oParentCollision/oParentCollision.yy",},"order":10,},
     {"id":{"name":"oBuilder","path":"objects/oBuilder/oBuilder.yy",},"order":9,},
     {"id":{"name":"sDeath","path":"sprites/sDeath/sDeath.yy",},"order":5,},
     {"id":{"name":"move","path":"scripts/move/move.yy",},"order":0,},

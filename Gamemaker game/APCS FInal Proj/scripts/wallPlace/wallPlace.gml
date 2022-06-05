@@ -23,7 +23,7 @@ function wallPlace(wallX, wallY, currentWall){
 			wallXnew = random(10000)
 			wallYnew = random(10000)
 		}
-		show_debug_message(count)
+		
 		
 		//x = 550 y = 330 dimensions of jumpability
 		//creating wall using the new variables

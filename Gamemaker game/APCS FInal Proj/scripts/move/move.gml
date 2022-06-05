@@ -1,32 +1,38 @@
-function move(xv, yv) {
-	//efficient code i learned from mr Janetka! also tunes with my speed buff variable and plays wierd noise
-	//if global.win=false {
-		//move()
-//not used anymore, bad
-		if keyboard_check(ord("A"))
-		    xv-=10
-		if keyboard_check(ord("D")) 
-		    xv+=10
-		if keyboard_check(vk_space) and (place_meeting(oPlayer.x + 10, oPlayer.y+10, oWall) or place_meeting(oPlayer.x - 10, oPlayer.y+10, oWall)) {
-			gravitas = 1
-			oPlayer.yv = 0
-			
-		}
-			
-		//jump code
-		if gravitas {
-			yv -= magnitude 
-		}
-		
-		
+function move() {
+	//jump
+	if keyboard_check_pressed(vk_space) and (place_meeting(x,y+1,oWall) or place_meeting(x + sign(vx), y, oWall)) {
+		vy=jump
+	}
 
-		vspeed=yv
-		
-		hspeed=xv
-		if hspeed >= 0
-			image_xscale = -1
-		else
-			image_xscale = 1
+
+	//left right
+	vx=0
+
+	if keyboard_check(ord("A")) {
+		vx-=xmax
+		image_xscale = 1
+	}
+	if keyboard_check(ord("D"))  {
+		vx+=xmax
+		image_xscale = -1
+	}
+
+
+	if !place_meeting(x+vx,y,oWall)
+	  x+=vx
+	else {
+		while( !place_meeting(x+sign(vx), y, oWall) )
+		  x+=sign(vx)
+	}
+
+	//up down
+	if !place_meeting(x,y+vy,oWall)
+	  y+=vy
+	else {
+		while(!place_meeting(x,y+sign(vy), oWall))
+		  y+=sign(vy)
+		vy=0
+}
 
 
 }

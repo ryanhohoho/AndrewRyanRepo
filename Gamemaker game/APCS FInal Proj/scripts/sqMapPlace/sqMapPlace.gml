@@ -1,6 +1,6 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function sqMapPlace(color, alpha, count, object, id, sizeX, sizeY){
+function sqMapPlace(color, alpha, count, object, id){
 	//mMapPlace(color,  alpha,  var name,  obj,  id name)
 	//draws a circle in a pos in the minimap
 	draw_set_color(color)

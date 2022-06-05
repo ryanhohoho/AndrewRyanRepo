@@ -1,5 +1,9 @@
-vx = 0
-vy = 0
-morbinMode = -1
-alarm[0] = 5
-image_alpha = 0.5
+vx = 2
+vy = 2
+wake = -1
+newX = 0
+newY = 0
+morbinMode = 0
+alarmy = 0
+alarmMorb = 0
+image_alpha = 0.2

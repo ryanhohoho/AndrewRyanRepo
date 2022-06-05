@@ -1,7 +1,36 @@
-if !morbinMode {
-	image
+// ORB FADE IN
+if !wake and image_alpha < 1{
+	image_alpha += 0.0023
 }
-// fade to 1 over 5 seconds, make loud noise after cooldown, little expand animation,
-//image index change, and point direction towrads player.
-//change direction to point towards player 
-//make periodic dashes that will speed towards the player, make it point towards player's previous location
+else {
+	image_angle = point_direction(x, y, oPlayer.x, oPlayer.y)
+	//ORB FOLLOW PLAYER CODE
+	if alarmy > 0 
+		alarmy -= 1
+	if alarmy <= 0 {
+		image_angle = point_direction(x, y, oPlayer.x, oPlayer.y)
+		newX = oPlayer.x
+		newY = oPlayer.y
+		//accelerate towards that position
+		alarmy = room_speed*4
+		
+	}
+	vx = (newX - x)/50
+	vy = (newY - y)/50
+	
+	if alarmMorb > 0 
+		alarmMorb -= 1
+	if alarmMorb <= 0 {
+		image_angle = point_direction(x, y, oPlayer.x, oPlayer.y)
+		vx = (newX - x)
+		vy = (newY - y)
+		alarmMorb = room_speed*(random(6)+5)
+	}
+	
+	x += vx
+	y += vy
+	// fade to 1 over 5 seconds, make loud noise after cooldown, little expand animation,
+	//image index change, and point direction towrads player.
+	//change direction to point towards player 
+	//make periodic dashes that will speed towards the player, make it point towards player's previous location
+}
