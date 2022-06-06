@@ -1,0 +1,9 @@
+//SHRINKING!!!
+if not position_meeting(x, y + 0.5, oWall) {
+	if sizeX > .1 {
+		sizeX -= 0.1
+		sizeY -= 0.1
+		image_xscale = sign(image_xscale)*sizeX
+		image_yscale = sign(image_yscale)*sizeY
+	}
+}

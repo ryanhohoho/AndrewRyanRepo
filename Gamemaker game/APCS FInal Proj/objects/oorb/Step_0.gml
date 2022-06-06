@@ -22,8 +22,8 @@ else {
 		alarmMorb -= 1
 	if alarmMorb <= 0 {
 		image_angle = point_direction(x, y, oPlayer.x, oPlayer.y)
-		vx = (newX - x)
-		vy = (newY - y)
+		vx = (newX - x)/5
+		vy = (newY - y)/5
 		alarmMorb = room_speed*(random(6)+5)
 	}
 	

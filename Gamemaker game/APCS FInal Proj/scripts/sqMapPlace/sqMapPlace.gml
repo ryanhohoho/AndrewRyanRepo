@@ -14,7 +14,7 @@ function sqMapPlace(color, alpha, count, object, id){
 		var wherey = yp + id.y * (yscale)
 		sizeX = id.image_xscale
 		sizeY = id.image_yscale
-		draw_rectangle(wherex,wherey,wherex+sizeX,wherey+sizeY,false)
+		draw_rectangle(wherex-sizeX,wherey-sizeY,wherex+sizeX,wherey+sizeY,false)
 	}
 
 
