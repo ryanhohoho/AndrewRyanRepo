@@ -37,7 +37,7 @@ if y > 20000
 	instance_destroy(self)
 if image_alpha <= 0 
 	instance_destroy(self)
-if x - oPlayer.x > 3000 and x - oPlayer.x < -3000
+if x - oPlayer.x > 2500 and x - oPlayer.x < -2500
 	instance_destroy(self)
-if y - oPlayer.y > 3000 and y - oPlayer.y < -3000
+if y - oPlayer.y > 2500 and y - oPlayer.y < -2500
 	instance_destroy(self)

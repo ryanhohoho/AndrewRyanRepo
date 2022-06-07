@@ -20,7 +20,7 @@ if downed >=0 {
 
 //death situations
 
-if y > 11000 {
+if y > deathY + 100 {
 	health = 0
 }
 show_debug_message(sizeX)

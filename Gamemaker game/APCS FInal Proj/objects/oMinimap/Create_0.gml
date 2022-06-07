@@ -1,10 +1,10 @@
 //needs variables or else cannot create.
 xp=500
 yp=300
-height = 150
-width = 150
-xscale=width/room_width
-yscale=height/room_height
+height = 15
+width = 15
+xscale=width/1000
+yscale=height/1000
 
 
 

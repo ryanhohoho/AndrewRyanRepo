@@ -1,1 +1,1 @@
-instance_destroy()
+deleted = 1
