@@ -1,6 +1,6 @@
 function move() {
 	//jump
-	if keyboard_check_pressed(vk_space) and (place_meeting(x,y+1,oWall) or place_meeting(x + sign(vx), y, oWall)) {
+	if keyboard_check(vk_space) and (place_meeting(x,y+1,oWall) or place_meeting(x + sign(vx), y, oWall)) {
 		vy=jump*sizeX
 	}
 
