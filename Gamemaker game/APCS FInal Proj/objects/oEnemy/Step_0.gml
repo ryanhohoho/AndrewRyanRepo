@@ -16,11 +16,11 @@ decision = real(random(4))
 if image_index <= 0.07 {
 	if decision >= 1.5 {
 		vx = -.5
-		image_xscale = -5
+		image_xscale = -size
 	}
 	else {
 		vx = .5
-		image_xscale = 5
+		image_xscale = size
 	}
 }
 //if near wall jump up the wall
@@ -32,8 +32,12 @@ x += vx
 //death code
 if dead > 0 
 	image_alpha -= 0.08
-
-if y > 11000
+// deletion code
+if y > 20000
 	instance_destroy(self)
 if image_alpha <= 0 
+	instance_destroy(self)
+if x - oPlayer.x > 3000 and x - oPlayer.x < -3000
+	instance_destroy(self)
+if y - oPlayer.y > 3000 and y - oPlayer.y < -3000
 	instance_destroy(self)

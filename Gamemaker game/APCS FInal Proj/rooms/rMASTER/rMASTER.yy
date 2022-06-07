@@ -14,7 +14,6 @@
   ],
   "layers": [
     {"instances":[
-        {"properties":[],"isDnd":false,"objectId":{"name":"oGlobal","path":"objects/oGlobal/oGlobal.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":384.0,"y":-160.0,"resourceVersion":"1.0","name":"inst_503E5CED","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"oDraw","path":"objects/oDraw/oDraw.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":192.0,"y":-160.0,"resourceVersion":"1.0","name":"inst_537F44A","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"oRandomizer","path":"objects/oRandomizer/oRandomizer.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":480.0,"y":-160.0,"resourceVersion":"1.0","name":"inst_3144516D","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"oMinimap","path":"objects/oMinimap/oMinimap.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":288.0,"y":-160.0,"resourceVersion":"1.0","name":"inst_54B932BE","tags":[],"resourceType":"GMRInstance",},
@@ -30,7 +29,6 @@
   "inheritCode": false,
   "instanceCreationOrder": [
     {"name":"inst_3144516D","path":"rooms/rMASTER/rMASTER.yy",},
-    {"name":"inst_503E5CED","path":"rooms/rMASTER/rMASTER.yy",},
     {"name":"inst_299CA32A","path":"rooms/rMASTER/rMASTER.yy",},
     {"name":"inst_537F44A","path":"rooms/rMASTER/rMASTER.yy",},
     {"name":"inst_54B932BE","path":"rooms/rMASTER/rMASTER.yy",},

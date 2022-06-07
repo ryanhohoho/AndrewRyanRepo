@@ -2,8 +2,6 @@
 function wallSpread(wallX, wallY, currentWall){
 	randomize()
 	if instance_number(oWall) < 1000 {
-		var distanceX = instance_nearest(currentWall.x, currentWall.y, oWall).x - wallX //checks your location
-		var distanceY = instance_nearest(currentWall.x, currentWall.y, oWall).y - wallY // if - means ur to the left/higher
 		//random size for the wall
 		width = random(4) + 0.3
 		height = random(2) + 0.3
@@ -15,7 +13,7 @@ function wallSpread(wallX, wallY, currentWall){
 		do { 
 			randomize()
 			rando = randomPlusMinus()
-			wallXnew = wallX + (5500)*rando
+			wallXnew = wallX + random(5500)*rando
 			randomize()
 			rando = randomPlusMinus()
 			wallYnew = wallY + random(3300)*rando
@@ -38,7 +36,6 @@ function wallSpread(wallX, wallY, currentWall){
 		currentWall = instance_create_depth(wallXnew, wallYnew, 1, oWall)
 		currentWall.image_xscale = width
 		currentWall.image_yscale = height
-		show_debug_message(count)
 		//recursion
 		wallPlace(wallXnew, wallYnew, currentWall)
 	}

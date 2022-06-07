@@ -1,3 +1,1 @@
-global.win = false
-//buffs
-global.speedBUFF = 1
+//global variables like score and stuff

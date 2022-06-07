@@ -17,7 +17,7 @@ else {
 	}
 	vx = (newX - x)/50
 	vy = (newY - y)/50
-	
+	//FIX UP THE MORB CODE RYAN!
 	if alarmMorb > 0 
 		alarmMorb -= 1
 	if alarmMorb <= 0 {
