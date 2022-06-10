@@ -2,8 +2,6 @@
 function wallPlace(wallX, wallY, currentWall){
 	randomize()
 	if instance_number(oWall) < 1000 {
-		var distanceX = instance_nearest(currentWall.x, currentWall.y, oWall).x - wallX //checks your location
-		var distanceY = instance_nearest(currentWall.x, currentWall.y, oWall).y - wallY // if - means ur to the left/higher
 		//random size for the wall
 		width = random(4) + 0.3
 		height = random(2) + 0.3

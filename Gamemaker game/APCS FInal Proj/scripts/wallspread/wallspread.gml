@@ -13,14 +13,14 @@ function wallSpread(wallX, wallY, currentWall){
 		do { 
 			randomize()
 			rando = randomPlusMinus()
-			wallXnew = wallX + random(5500)*rando
+			wallXnew = wallX + random(550)*rando
 			randomize()
 			rando = randomPlusMinus()
-			wallYnew = wallY + random(3300)*rando
+			wallYnew = wallY + random(330)*rando
 			count ++
-			if wallXnew*sign(wallXnew) - wallX*sign(wallX) > 100
+			if wallXnew - wallX*sign(wallX) > 250*sign(wallX)
 				minRangeX = 1
-			if wallYnew*sign(wallYnew) - wallY*sign(wallY) > 2500
+			if wallYnew - wallY*sign(wallY) > 250*sign(wallY)
 				minRangeY = 1
 		} 
 		until (!position_meeting(wallXnew, wallYnew, oWall) or count > 10000) and minRangeX = 1 and minRangeY = 1
@@ -37,6 +37,6 @@ function wallSpread(wallX, wallY, currentWall){
 		currentWall.image_xscale = width
 		currentWall.image_yscale = height
 		//recursion
-		wallPlace(wallXnew, wallYnew, currentWall)
+		wallSpread(wallXnew, wallYnew, currentWall)
 	}
 }

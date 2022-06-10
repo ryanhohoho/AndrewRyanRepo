@@ -14,7 +14,11 @@ function sqMapPlace(color, alpha, count, object, id){
 		var wherey = yp + id.y * (yscale)
 		sizeX = id.image_xscale
 		sizeY = id.image_yscale
-		draw_rectangle(wherex-sizeX,wherey-sizeY,wherex+sizeX,wherey+sizeY,false)
+		block = draw_rectangle(wherex-sizeX,wherey-sizeY,wherex+sizeX,wherey+sizeY,false)
+		//x = 4400 5600
+		//y = 4640 5412 but doesnt work yet
+		//if (block.x < 4400 or block.x > 5600) or (block.y < 4640 or block.y > 5412)
+			//room_restart()
 	}
 
 
