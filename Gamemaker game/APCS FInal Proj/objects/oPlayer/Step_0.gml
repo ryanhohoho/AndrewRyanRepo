@@ -23,3 +23,7 @@ if downed >=0 {
 if y > deathY + 100 {
 	health = 0
 }
+
+//checking if touching teleporter for the draw text
+if place_meeting(x, y, oTeleporter) 
+	enterTP = 1

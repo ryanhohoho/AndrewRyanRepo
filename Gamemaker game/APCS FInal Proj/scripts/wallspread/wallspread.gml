@@ -1,5 +1,6 @@
 
 function wallSpread(wallX, wallY, currentWall){
+	//NOT THE ONE USED, BUT A BACKUP WITH DIFFERENT CODE FOR A DIAGNOL LINE. BROKEN CURRENTLY
 	randomize()
 	if instance_number(oWall) < 1000 {
 		//random size for the wall

@@ -18,8 +18,11 @@ function wallPlace(wallX, wallY, currentWall){
 		until !position_meeting(wallXnew, wallYnew, oWall) or count > 10000
 		
 		if count >= 9999 {
+			//TELEPORTER CODE ALSO CREATING NEW CHUNK
+			instance_create_depth(wallXnew, wallYnew  - 20, 0, oTeleporter)
 			wallXnew = random(10000)
 			wallYnew = random(10000)
+			instance_create_depth(wallXnew, wallYnew  - 20, 0, oTeleporter)
 		}
 		
 		

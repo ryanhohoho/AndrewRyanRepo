@@ -9,6 +9,7 @@ yscale=height/1000
 
 
 wallId=0
+teleId=0
 playerId=0
 orbId=0
 enemyId=0
@@ -16,6 +17,6 @@ enemyId=0
 
 enemyCount=0
 wallCount=0
+teleCount=0
 playerCount=0
 orbCount=0
-minionCount=0

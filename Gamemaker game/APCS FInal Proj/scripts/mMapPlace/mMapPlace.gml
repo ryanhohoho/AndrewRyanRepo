@@ -12,11 +12,7 @@ function mMapPlace(color, alpha, count, object, id, size) {
 		var wherex = xp + id.x * (xscale)
 		var wherey = yp + id.y * (yscale)
 		//finding if within proximity
-		if id.x - oPlayer.x < 2500 and id.x - oPlayer.x > -2500 {
-			if id.y - oPlayer.y < 2500 and id.y - oPlayer.y > -2500 {
-				draw_circle(wherex,wherey,size,false)
-			}
-		}
+		draw_circle(wherex,wherey,size,false)
 	}
 
 
