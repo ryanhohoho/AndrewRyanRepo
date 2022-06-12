@@ -6,3 +6,6 @@ else
 	brother = tpID - 1
 teleport = -1
 //determining colour of portals
+
+//creating safety net under
+instance_create_depth(x, y + 80, 0, oWall)

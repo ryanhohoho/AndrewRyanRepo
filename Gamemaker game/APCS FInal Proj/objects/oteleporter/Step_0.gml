@@ -1,6 +1,7 @@
-
+//teleports to brother portal
 if teleport {
-	brother = instance_find(oTeleporter, brother)
-	oPlayer.x = brother.x
-	oPlayer.y = brother.y
+	brotherTP = instance_find(oTeleporter, brother-1)
+	oPlayer.x = brotherTP.x
+	oPlayer.y = brotherTP.y
+	teleport = -1
 }
