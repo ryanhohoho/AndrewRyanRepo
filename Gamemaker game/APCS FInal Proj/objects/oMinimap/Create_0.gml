@@ -20,3 +20,5 @@ wallCount=0
 teleCount=0
 playerCount=0
 orbCount=0
+
+toggle = 1

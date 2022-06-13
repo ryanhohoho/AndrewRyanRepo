@@ -19,16 +19,16 @@ function wallPlace(wallX, wallY, currentWall){
 		
 		if count >= 9999 {
 			//TELEPORTER CODE ALSO CREATING NEW CHUNK
-			instance_create_depth(wallXnew, wallYnew  - 20, 0, oTeleporter)
+			instance_create_depth(wallXnew, wallYnew  - 20, 1, oTeleporter)
 			wallXnew = random(10000)
 			wallYnew = random(10000)
-			instance_create_depth(wallXnew, wallYnew  - 20, 0, oTeleporter)
+			instance_create_depth(wallXnew, wallYnew  - 20, 1, oTeleporter)
 		}
 		
 		
 		//x = 550 y = 330 dimensions of jumpability
 		//creating wall using the new variables
-		currentWall = instance_create_depth(wallXnew, wallYnew, 1, oWall)
+		currentWall = instance_create_depth(wallXnew, wallYnew, 10, oWall)
 		currentWall.image_xscale = width
 		currentWall.image_yscale = height
 		

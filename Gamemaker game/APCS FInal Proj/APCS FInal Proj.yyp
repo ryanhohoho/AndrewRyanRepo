@@ -1,14 +1,18 @@
 {
   "resources": [
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},"order":7,},
+    {"id":{"name":"rMENU","path":"rooms/rMENU/rMENU.yy",},"order":1,},
     {"id":{"name":"oForcefield","path":"objects/oForcefield/oForcefield.yy",},"order":12,},
     {"id":{"name":"sTeleporter","path":"sprites/sTeleporter/sTeleporter.yy",},"order":9,},
+    {"id":{"name":"sBoss","path":"sprites/sBoss/sBoss.yy",},"order":11,},
     {"id":{"name":"mMapPlace","path":"scripts/mMapPlace/mMapPlace.yy",},"order":4,},
     {"id":{"name":"oBuilder","path":"objects/oBuilder/oBuilder.yy",},"order":9,},
     {"id":{"name":"sDeath","path":"sprites/sDeath/sDeath.yy",},"order":5,},
+    {"id":{"name":"oPlay","path":"objects/oPlay/oPlay.yy",},"order":0,},
     {"id":{"name":"move","path":"scripts/move/move.yy",},"order":0,},
     {"id":{"name":"randomPlusMinus","path":"scripts/randomPlusMinus/randomPlusMinus.yy",},"order":9,},
     {"id":{"name":"wallSpread","path":"scripts/wallSpread/wallSpread.yy",},"order":10,},
+    {"id":{"name":"sPlay","path":"sprites/sPlay/sPlay.yy",},"order":10,},
     {"id":{"name":"oRandomizer","path":"objects/oRandomizer/oRandomizer.yy",},"order":2,},
     {"id":{"name":"sOrb","path":"sprites/sOrb/sOrb.yy",},"order":7,},
     {"id":{"name":"oOrb","path":"objects/oOrb/oOrb.yy",},"order":11,},
@@ -17,9 +21,9 @@
     {"id":{"name":"sPlayer","path":"sprites/sPlayer/sPlayer.yy",},"order":8,},
     {"id":{"name":"oDraw","path":"objects/oDraw/oDraw.yy",},"order":3,},
     {"id":{"name":"gravityTick","path":"scripts/gravityTick/gravityTick.yy",},"order":5,},
-    {"id":{"name":"sWhitePixel","path":"sprites/sWhitePixel/sWhitePixel.yy",},"order":1,},
     {"id":{"name":"wallPlace","path":"scripts/wallPlace/wallPlace.yy",},"order":8,},
     {"id":{"name":"sqMapPlace","path":"scripts/sqMapPlace/sqMapPlace.yy",},"order":7,},
+    {"id":{"name":"oPlayerTrail","path":"objects/oPlayerTrail/oPlayerTrail.yy",},"order":17,},
     {"id":{"name":"sHealthbar","path":"sprites/sHealthbar/sHealthbar.yy",},"order":6,},
     {"id":{"name":"oEnemy","path":"objects/oEnemy/oEnemy.yy",},"order":8,},
     {"id":{"name":"damaged","path":"scripts/damaged/damaged.yy",},"order":6,},
@@ -43,6 +47,7 @@
     "children": [],
   },
   "RoomOrderNodes": [
+    {"roomId":{"name":"rMENU","path":"rooms/rMENU/rMENU.yy",},},
     {"roomId":{"name":"rMASTER","path":"rooms/rMASTER/rMASTER.yy",},},
   ],
   "Folders": [
@@ -60,6 +65,7 @@
     {"folderPath":"folders/Animation Curves.yy","order":10,"resourceVersion":"1.0","name":"Animation Curves","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Notes.yy","order":11,"resourceVersion":"1.0","name":"Notes","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Extensions.yy","order":12,"resourceVersion":"1.0","name":"Extensions","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Objects/menuButtons.yy","order":16,"resourceVersion":"1.0","name":"menuButtons","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},
