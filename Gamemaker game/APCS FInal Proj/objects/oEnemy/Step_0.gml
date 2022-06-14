@@ -33,7 +33,7 @@ x += vx
 if dead > 0 
 	image_alpha -= 0.08
 // deletion code
-if y > 20000
+if y > oPlayer.deathY
 	instance_destroy(self)
 if image_alpha <= 0 
 	instance_destroy(self)

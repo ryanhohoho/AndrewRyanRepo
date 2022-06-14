@@ -1,0 +1,7 @@
+//random location
+do  {
+	x = random(50000)
+	//so it's not at spawn
+	y = random(49500) + 500
+}
+until place_meeting(x,y, oWall)

@@ -27,3 +27,4 @@ if y > deathY + 100 {
 //checking if touching teleporter for the draw text
 if place_meeting(x, y, oTeleporter) 
 	enterTP = 1
+

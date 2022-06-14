@@ -20,8 +20,8 @@ function wallPlace(wallX, wallY, currentWall){
 		if count >= 9999 {
 			//TELEPORTER CODE ALSO CREATING NEW CHUNK
 			instance_create_depth(wallXnew, wallYnew  - 20, 1, oTeleporter)
-			wallXnew = random(10000)
-			wallYnew = random(10000)
+			wallXnew = random(50000)
+			wallYnew = random(50000)
 			instance_create_depth(wallXnew, wallYnew  - 20, 1, oTeleporter)
 		}
 		
