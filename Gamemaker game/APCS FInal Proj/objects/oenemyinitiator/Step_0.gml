@@ -2,10 +2,10 @@
 do {
 	randomize()
 	rando = randomPlusMinus()
-	x = oPlayer.x + (random(2500) + 2500)*rando
+	x = oPlayer.x + (random(2500) + 2000)*rando
 	randomize()
 	rando = randomPlusMinus()
-	y = oPlayer.y + (random(2500) + 2500)*rando
+	y = oPlayer.y + (random(500) + 2000)*rando
 	
 }
 until ! place_meeting(x,y, oWall) or count > 10000 and instance_nearest(x,y, oEnemy).x > 500

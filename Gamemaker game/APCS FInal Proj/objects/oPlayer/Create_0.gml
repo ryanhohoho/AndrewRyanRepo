@@ -18,3 +18,5 @@ for(k=0; k<count; k=k+1) {
 		lowestY = tempY
 }
 deathY = lowestY
+
+instance_create_depth(x,y, 50, oProx)

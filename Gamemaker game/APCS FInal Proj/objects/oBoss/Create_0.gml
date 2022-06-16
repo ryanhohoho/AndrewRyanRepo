@@ -5,3 +5,11 @@ do  {
 	y = random(49500) + 500
 }
 until place_meeting(x,y, oWall)
+vx = 2
+vy = 2
+newX = 0
+newY = 0
+morbinMode = 0
+alarmy = 0
+alarmMorb = 0
+

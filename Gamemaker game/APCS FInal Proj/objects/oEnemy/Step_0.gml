@@ -1,12 +1,14 @@
 //gravity pulls
 if !place_meeting(x,y+1,oWall) {
 	vy+=g
-	if vy>20
+	if vy>20 and ! spawn
 	  vy=20
 }
 if !place_meeting(x,y+vy,oWall)
   y+=vy
 else {
+	//this is to make it spawn on floor
+	spawn = -1
 	while(!place_meeting(x,y+sign(vy), oWall))
 	  y+=sign(vy)
 	vy=0
@@ -34,10 +36,11 @@ if dead > 0
 	image_alpha -= 0.08
 // deletion code
 if y > oPlayer.deathY
-	instance_destroy(self)
+	instance_destroy()
 if image_alpha <= 0 
-	instance_destroy(self)
-if x - oPlayer.x > 2500 and x - oPlayer.x < -2500
-	instance_destroy(self)
-if y - oPlayer.y > 2500 and y - oPlayer.y < -2500
-	instance_destroy(self)
+	instance_destroy()
+if ! place_meeting(x,y, oProx)
+if x > oPlayer.x + 2500 or x < oPlayer.x - 2500
+	instance_destroy()
+if y > oPlayer.y + 2500 or y < oPlayer.y - 2500
+	instance_destroy()

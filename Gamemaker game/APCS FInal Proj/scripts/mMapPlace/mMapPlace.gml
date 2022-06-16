@@ -14,7 +14,11 @@ function mMapPlace(color, alpha, count, object, id, size) {
 		//teleporter differnet colors 
 		if object = oTeleporter
 			draw_set_color(c_aqua + id.balls*90)
-		draw_circle(wherex,wherey,size,false)
+			//player proximity detector
+		if object = oPlayer
+			playerProx = draw_circle(wherex,wherey,size,false)
+		else
+			draw_circle(wherex,wherey,size,false)
 	}
 
 }
