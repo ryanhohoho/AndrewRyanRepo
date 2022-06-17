@@ -1,3 +1,5 @@
+if global.stopStep = true
+	exit
 // ORB FADE IN
 if !wake and image_alpha < 1{
 	image_alpha += 0.0023

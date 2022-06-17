@@ -1,3 +1,5 @@
+if global.stopStep = true
+	exit
 //gravity pulls
 if !place_meeting(x,y+1,oWall) {
 	vy+=g
@@ -17,7 +19,6 @@ if downed >=0 {
 	for(var d = 0; d <=500; d++)
 		damaged(d)
 }
-
 //death situations
 
 if y > deathY + 100 {
