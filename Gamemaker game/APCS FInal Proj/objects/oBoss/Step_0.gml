@@ -34,6 +34,7 @@ if global.stopStep = true {
 			}
 			else {
 				room_goto(rBOSS)
+				global.stopStep = false
 			}
 		}
 	}
@@ -65,7 +66,6 @@ if point_distance(x, y, oPlayer.x, oPlayer.y) < 1500 {
 	var v1 = point_direction(x, y, oPlayer.x, oPlayer.y)
 	var v2 = point_direction(x, y, oPlayer.x, y)
 	desiredAngle = angle_difference(v1, v2)
-	show_debug_message(desiredAngle)
 	image_angle = desiredAngle
 	newX = point_distance(x, y, oPlayer.x, oPlayer.y)*cos(desiredAngle)
 	newY = point_distance(x, y, oPlayer.x, oPlayer.y)*sin(desiredAngle)

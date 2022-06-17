@@ -9,5 +9,10 @@ if room = rMASTER {
 	instance_create_depth(0,0, 0, oBoss)
 }
 else if room = rBOSS {
-	instance_create_depth(2500, 1300, 0, oPlayer)
+	currentWall = instance_create_depth(7500, 4800, 10, oWall)
+	wallPlace(7500, 4800, currentWall)
+	instance_create_depth(7500, 4600, 0, oPlayer)
+	//just for cutscene white
+	fadeWhite = instance_create_depth(7500, 4600, -10, oWhite)
+	fadeWhite.fadeIn = 1
 }
