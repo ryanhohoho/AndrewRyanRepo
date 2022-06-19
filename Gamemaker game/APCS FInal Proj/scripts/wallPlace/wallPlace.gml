@@ -9,10 +9,8 @@ function wallPlace(wallX, wallY, currentWall){
 		//loop for location of the wall not colliding with other wall
 		
 		do { 
-			rando = randomPlusMinus()
-			wallXnew = wallX + (550)*rando
-			rando = randomPlusMinus()
-			wallYnew = wallY + random(330)*rando
+			wallXnew = wallX + (550)*randomPlusMinus()
+			wallYnew = wallY + random(330)*randomPlusMinus()
 			count ++
 		} 
 		until !position_meeting(wallXnew, wallYnew, oWall) or count > 10000

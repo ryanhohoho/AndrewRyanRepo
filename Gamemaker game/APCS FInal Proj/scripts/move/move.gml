@@ -3,20 +3,20 @@ function move() {
 	if keyboard_check(vk_space) and (place_meeting(x,y+1,oWall) or place_meeting(x + sign(vx), y, oWall)) {
 		vy=jump*sizeX
 	}
-
+	
 
 	//left right
 	vx=0
 
 	if keyboard_check(ord("A")) {
 		vx-=xmax*sizeX
-		image_xscale = 1*sizeX
+		image_xscale = 1.001*sizeX
 	}
 	if keyboard_check(ord("D"))  {
 		vx+=xmax*sizeX
-		image_xscale = -1*sizeX
+		image_xscale = -1.001*sizeX
 	}
-
+show_debug_message(image_xscale)
 
 	if !place_meeting(x+vx,y,oWall)
 	  x+=vx

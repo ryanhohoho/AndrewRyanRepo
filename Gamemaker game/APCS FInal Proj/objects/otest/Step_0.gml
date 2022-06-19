@@ -28,11 +28,11 @@ if global.stopStep = true {
 		}
 		else {
 			//fading to white
-			if alarmWhite > 0 {
-				alarmWhite --
+			if oWhite.image_alpha < 1 {
 				oWhite.image_alpha += 0.008
 			}
 			else {
+				global.stopStep = false
 				room_goto(rBOSS)
 			}
 		}

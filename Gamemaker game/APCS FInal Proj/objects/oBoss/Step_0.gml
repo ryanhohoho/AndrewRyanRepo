@@ -43,18 +43,19 @@ if global.stopStep = true {
 if global.stopStep = true
 	exit
 //boss rate of change
-
-if alarmy > 0 
-	alarmy -= 1
-if alarmy <= 0 {
-	randomize()
-	wall = instance_find(oWall, random(instance_number(oWall) - 1))
-	newX = wall.x
-	newY = wall.y
-	image_angle = point_direction(x, y, newX, newY)
-	//accelerate towards that position
-	alarmy = room_speed*4
+if instance_exists(oWall) {
+	if alarmy > 0 
+		alarmy -= 1
+	if alarmy <= 0 {
+		randomize()
+		wall = instance_find(oWall, random(instance_number(oWall) - 1))
+		newX = wall.x
+		newY = wall.y
+		image_angle = point_direction(x, y, newX, newY)
+		//accelerate towards that position
+		alarmy = room_speed*4
 		
+	}
 }
 vx = (newX - x)/50
 vy = (newY - y)/50

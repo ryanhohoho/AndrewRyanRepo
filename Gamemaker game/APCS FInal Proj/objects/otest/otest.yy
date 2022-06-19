@@ -28,8 +28,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "mobs",
+    "path": "folders/Objects/mobs.yy",
   },
   "resourceVersion": "1.0",
   "name": "oTest",
