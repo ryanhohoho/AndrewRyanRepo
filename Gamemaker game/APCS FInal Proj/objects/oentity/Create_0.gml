@@ -6,8 +6,9 @@ image_xscale = 3
 image_yscale = 3
 
 //projectiles and attacks
-selection = 2
-alarmAttack = room_speed*5
-alarmOrb = room_speed*1
+selection = 0
+alarmAttack = room_speed*1
+alarm1 = room_speed*1
 orbCount = 5
+toggleBullet = -1
 count = 5

@@ -11,8 +11,8 @@ else {
 }
 if point_distance(x, y, oPlayer.x, oPlayer.y) > 1000
 	vx = (oPlayer.x - x)/140
-if y > oPlayer.y + 350 or y < oPlayer.y - 350
-	vy = (random(2) + 1)*randomPlusMinus() - sign(vy)
+if y + vy > oPlayer.y + 250 or y < oPlayer.y - 250
+	vy = (oPlayer.y - y)/240
 x += vx
 //flipping angle
 if vx <= 0
@@ -24,22 +24,16 @@ y += vy
 if alarmAttack > 0
 	alarmAttack --
 else {
-	selection = random(2)
-	if selection > 1 {
-		//orb attack
-		if alarmOrb > 0
-			alarmOrb --
-		else if count > 0 {
-			//fires projectile and resets the intervals
-			instance_create_depth(x, y, -10, eProjectile)
-			count --
-			alarmOrb = room_speed*1
-		}
-		else {
-			//resets the attack timer
-			selection = random(2)
-			alarmAttack = 0
-		}
-				
+	if toggleBullet = -1 {
+		//destroying previous projectiles before firing more
+		randomize()
+		selection = random(5)
+		count = 5
+		toggleBullet = 1
 	}
+	//spawnBullet(type of bullet, firerate, amount of bullets)
+	spawnBullet(3, 0)
+	spawnBullet(2, .5)
+	spawnBullet(1, .2)
+	spawnBullet(0, .5)
 }

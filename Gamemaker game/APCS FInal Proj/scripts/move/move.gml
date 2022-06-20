@@ -16,7 +16,11 @@ function move() {
 		vx+=xmax*sizeX
 		image_xscale = -1.001*sizeX
 	}
-show_debug_message(image_xscale)
+	//checking max speed limit
+	if vx > 20
+		vx = 20
+	if vy < -40
+		vy = -40
 
 	if !place_meeting(x+vx,y,oWall)
 	  x+=vx

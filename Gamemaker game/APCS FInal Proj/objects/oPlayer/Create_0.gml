@@ -1,9 +1,10 @@
+maxSize = 2
 g=1
 vx=0
 vy=0
 xmax=8
 jump=-18
-health = 3
+hp = 10
 downed = -1
 drY = 0
 sizeX = 1.001

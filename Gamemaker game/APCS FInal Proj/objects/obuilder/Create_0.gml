@@ -7,7 +7,6 @@ if room = rMASTER {
 	instance_create_depth(50100, 50100, 0, oOrb)
 	instance_create_depth(0,0, 0, oBoss)
 	instance_create_depth(0,0, 0, oBoss)
-	instance_create_depth(oPlayer.x + 200, oPlayer.y - 200, 1, oEntity)
 	startPlatform()
 }
 else if room = rBOSS {
@@ -20,5 +19,5 @@ else if room = rBOSS {
 	//just for cutscene white
 	fadeWhite = instance_create_depth(7500, 4600, -10, oWhite)
 	fadeWhite.fadeIn = 1
-	instance_create_depth(oPlayer.x + 200, oPlayer.y - 200, 1, oEntity)
+	instance_create_depth(oPlayer.x + 600, oPlayer.y - 200, 1, oEntity)
 }
