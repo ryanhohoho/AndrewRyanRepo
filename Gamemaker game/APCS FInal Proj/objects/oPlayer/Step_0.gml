@@ -1,6 +1,5 @@
 if global.stopStep = true  or hp <= 0 {
-	if !instance_exists(oHome) and hp <= 0
-		instance_create_depth(x, y + 200, -100, oHome)
+	global.button = 1
 	exit
 }
 //gravity pulls

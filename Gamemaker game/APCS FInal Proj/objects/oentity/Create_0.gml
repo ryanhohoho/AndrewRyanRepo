@@ -1,7 +1,7 @@
 vx = 0
 vy = 0
 dead = -1
-
+win = -1
 alarmMove = 0
 depth = -10
 image_xscale = 3

@@ -21,7 +21,7 @@ for(k=0; k<count; k=k+1) {
 	if tempY > lowestY 
 		lowestY = tempY
 }
-deathY = lowestY
+deathY = lowestY + 500
 
 instance_create_depth(x,y, 50, oProx)
 if place_meeting(x,y, oWall) 

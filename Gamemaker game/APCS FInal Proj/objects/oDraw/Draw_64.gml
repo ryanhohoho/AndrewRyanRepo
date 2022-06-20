@@ -27,7 +27,6 @@ if instance_exists(oPlayer) {
 	}
 }
 //scores
-if instance_exists(oGlobal) {
-	draw_text_color(40, 200, "SCORE: " + string(global.score), c_yellow, c_white, c_yellow, c_white, 1)
-	draw_text_color(40, 220, "HGHSCORE: " + string(global.highscore), c_yellow, c_aqua, c_yellow, c_aqua, 1)
-}
+draw_text_color(40, 200, "SCORE: " + string(global.score), c_yellow, c_white, c_yellow, c_white, 1)
+draw_text_color(40, 220, "HGHSCORE: " + string(global.highscore), c_yellow, c_aqua, c_yellow, c_aqua, 1)
+

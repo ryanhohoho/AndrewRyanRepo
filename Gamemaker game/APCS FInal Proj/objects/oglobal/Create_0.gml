@@ -2,7 +2,7 @@ global.stopStep = false
 global.score = 0
 global.highscore = 0
 global.time = 0
-global.gameBeat = false
+global.button = -1
 
 /* RYAN THESE ARE THE THINGS YOU NEED TO CHANGE WHEN BASEICALLY DONE.
 

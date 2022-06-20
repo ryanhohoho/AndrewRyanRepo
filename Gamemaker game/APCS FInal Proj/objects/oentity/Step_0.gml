@@ -50,9 +50,8 @@ if global.stopStep = true {
 		image_yscale -= 0.01
 	}
 	else {
-		global.gameBeat = true
 		instance_create_depth(x, y, -9, oENDSCREEN)
-		instance_create_depth(x, y  + 600, -10, oHome)
+		win = 1
 		instance_destroy()
 	}
 }

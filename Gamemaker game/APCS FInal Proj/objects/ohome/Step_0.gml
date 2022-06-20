@@ -1,4 +1,8 @@
-if room != rBOSS {
+if global.button {
 	x = oPlayer.x
-	y = oPlayer.y + 300
+	y = oPlayer.y + 200
+}
+else {
+	x = -10000
+	y = -10000
 }
