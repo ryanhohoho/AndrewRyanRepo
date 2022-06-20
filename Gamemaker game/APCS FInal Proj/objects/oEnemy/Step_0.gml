@@ -37,8 +37,11 @@ if dead > 0
 // deletion code
 if y > oPlayer.deathY
 	instance_destroy()
-if image_alpha <= 0 
+	//true death from player
+if image_alpha <= 0  {
+	global.score += 100
 	instance_destroy()
+}
 if ! place_meeting(x,y, oProx)
 if x > oPlayer.x + 2500 or x < oPlayer.x - 2500
 	instance_destroy()

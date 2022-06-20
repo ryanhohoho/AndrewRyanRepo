@@ -1,1 +1,2 @@
-deleted = 1
+if room = rMASTER
+	deleted = 1

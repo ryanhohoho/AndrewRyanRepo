@@ -4,6 +4,6 @@ function startPlatform(){
 	instance_create_depth(starter.x, starter.y +200, 10, oWall)
 	randomize()
 	wallID = instance_find(oWall, random(instance_number-1))
-	starterBrother = instance_create_depth(wallID.x,wallID.y + 200, 1, oTeleporter)
-	instance_create_depth(starter.x - 200,oPlayer.y, 1, oTest)
+	instance_create_depth(wallID.x,wallID.y + 200, 1, oTeleporter)
+	//instance_create_depth(starter.x - 200,oPlayer.y, 1, oTest)
 }

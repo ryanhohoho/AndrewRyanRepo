@@ -1,5 +1,6 @@
 baseX = x
 baseY = y
+beenHit = -1
 selected = oEntity.selection
 if selected > 3  {
 	//laser attack

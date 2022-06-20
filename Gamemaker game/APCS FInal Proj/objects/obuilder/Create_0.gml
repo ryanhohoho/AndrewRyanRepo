@@ -1,4 +1,6 @@
 rL = 0
+view_visible[0] = 1
+view_visible[1] = 0
 if room = rMASTER {
 	//initiates the wall building sequence
 	currentWall = instance_create_depth(50000, 1100, 10, oWall)
@@ -16,8 +18,5 @@ else if room = rBOSS {
 		rL = -96
 	}
 	instance_create_depth(7500, 2700, 0, oPlayer)
-	//just for cutscene white
-	fadeWhite = instance_create_depth(7500, 4600, -10, oWhite)
-	fadeWhite.fadeIn = 1
 	instance_create_depth(oPlayer.x + 600, oPlayer.y - 200, 1, oEntity)
 }

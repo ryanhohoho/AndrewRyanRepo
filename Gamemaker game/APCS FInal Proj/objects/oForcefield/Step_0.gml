@@ -23,5 +23,4 @@ else {
 //erasing itself
 if image_xscale <= 0 {
 	instance_destroy()
-	show_debug_message("DESTROYED FORCEFIELD")
 }

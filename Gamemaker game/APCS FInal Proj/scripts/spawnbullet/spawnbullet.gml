@@ -1,10 +1,5 @@
 //spawnBullet(type of bullet, firerate)
 function spawnBullet(type, rate){
-	show_debug_message(selection)
-	show_debug_message("counter")
-	show_debug_message(count)
-	show_debug_message("alarmAttack")
-	show_debug_message(alarmAttack)
 if selection > type {
 		//orb attack
 		if alarm1 > 0
@@ -17,7 +12,7 @@ if selection > type {
 		}
 		if count <= 0 {
 			//resets the attack timer
-			alarmAttack = room_speed*5
+			alarmAttack = room_speed*1
 			toggleBullet = -1
 		}
 				

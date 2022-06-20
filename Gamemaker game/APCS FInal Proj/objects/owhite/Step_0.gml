@@ -1,8 +1,5 @@
-if fadeIn {
-	if image_alpha = -1
-		image_alpha = 1
-	if image_alpha > 0
-		image_alpha -= 0.002
-	else
-		fadeIn = -1
+//repositioning for bossroom
+if room = rBOSS {
+	x = view_get_xport(1)
+	y = view_get_yport(1)
 }

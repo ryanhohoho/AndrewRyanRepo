@@ -15,6 +15,4 @@ alarmMorb = 0
 depth = -1
 y = y -200
 alarmExpand = room_speed*2
-alarmStill = room_speed*2
-alarmWhite = room_speed*2
-
+alarmStill = room_speed*1.6

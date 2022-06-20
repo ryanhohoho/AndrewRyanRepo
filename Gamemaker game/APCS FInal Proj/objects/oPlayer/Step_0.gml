@@ -1,5 +1,8 @@
-if global.stopStep = true
+if global.stopStep = true  or hp <= 0 {
+	if !instance_exists(oHome) and hp <= 0
+		instance_create_depth(x, y + 200, -100, oHome)
 	exit
+}
 //gravity pulls
 if !place_meeting(x,y+1,oWall) {
 	vy+=g
@@ -13,6 +16,16 @@ move()
 if place_meeting(x+sign(vx), y, oWall) and vy > 0
 	vy = 5
 
+
+//forcefield regeneration
+if alarmFF > 0 and forceFields < 3 {
+	alarmFF --
+}
+else if alarmFF <= 0 {
+	forceFields ++
+	alarmFF = room_speed*10
+}
+
 // damaged loop
 
 if downed >=0 {
@@ -22,7 +35,7 @@ if downed >=0 {
 //death situations
 
 if y > deathY + 100 {
-	health = 0
+	hp = 0
 }
 
 //checking if touching teleporter for the draw text

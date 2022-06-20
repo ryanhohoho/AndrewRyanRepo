@@ -11,6 +11,8 @@ sizeX = 1.001
 sizeY = 1.001
 lowestY = 0
 enterTP = -1
+forceFields = 3
+alarmFF = room_speed*10
 depth-=1
 //finding lowest for death
 count = instance_number(oWall)

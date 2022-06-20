@@ -1,2 +1,4 @@
-if oPlayer.sizeX > 6
-	room_goto(rMENU)
+if oPlayer.sizeX > 10 {
+	dead = 1
+	global.score += 5000
+}

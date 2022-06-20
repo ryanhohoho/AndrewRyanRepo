@@ -8,7 +8,7 @@ if rectangle_in_circle(x1, y1, x2, y2, x, y, 150) = 1 and global.stopStep =  fal
 	global.stopStep = true
 	instance_deactivate_all(1)
 	instance_activate_object(oPlayer)
-	instance_create_depth(x,y, -3, oWhite)
+	instance_create_depth(x,y, -1, oWhite)
 	oPlayer.depth = 1
 }
 //CUTSCENE TO BOSS STAGE
@@ -28,13 +28,12 @@ if global.stopStep = true {
 		}
 		else {
 			//fading to white
-			if alarmWhite > 0 {
-				alarmWhite --
+			if oWhite.image_alpha < 1 {
 				oWhite.image_alpha += 0.008
 			}
 			else {
-				room_goto(rBOSS)
 				global.stopStep = false
+				room_goto(rBOSS)
 			}
 		}
 	}
