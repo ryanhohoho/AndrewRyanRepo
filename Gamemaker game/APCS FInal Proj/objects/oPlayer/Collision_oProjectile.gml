@@ -2,7 +2,7 @@ if ! other.beenHit and hp > 0 {
 	if other.sprite_index = sBoss {
 		maxSize += 0.3
 		hp ++
-		global.score += 300
+		global.score += 3000
 		instance_destroy(other)
 	}
 	else if other.sprite_index = sOrb {

@@ -39,7 +39,7 @@ if y > oPlayer.deathY
 	instance_destroy()
 	//true death from player
 if image_alpha <= 0  {
-	global.score += 100
+	global.score += 1000
 	instance_destroy()
 }
 if ! place_meeting(x,y, oProx)
