@@ -1,4 +1,4 @@
-if ! other.beenHit {
+if ! other.beenHit and hp > 0 {
 	if other.sprite_index = sBoss {
 		maxSize += 0.3
 		hp ++

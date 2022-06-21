@@ -1,7 +1,7 @@
 //stay one image and on player
 image_index = 0
 x = oPlayer.x
-y = oPlayer.y
+y = oPlayer.y - 100*oPlayer.sizeX
 
 if spawned {
 	spawned = -1

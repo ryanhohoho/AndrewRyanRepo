@@ -3,7 +3,6 @@ drY = instance_nearest(x,y, oEnemy).y - y
 if drY > 0 {
 	instance_nearest(x,y, oEnemy).dead = 1
 	instance_nearest(x,y, oEnemy).mask_index = -1
-	hp ++
 	vy=jump
 }
 

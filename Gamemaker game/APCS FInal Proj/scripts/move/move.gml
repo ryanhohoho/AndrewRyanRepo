@@ -19,6 +19,8 @@ function move() {
 	//checking max speed limit
 	if vx > 20
 		vx = 20
+	if vx < -20
+		vx = -20
 	if vy < -40
 		vy = -40
 

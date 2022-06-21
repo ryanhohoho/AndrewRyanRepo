@@ -1,8 +1,8 @@
 //random location
 do  {
-	x = random(50000)
+	x = random(100000)
 	//so it's not at spawn
-	y = random(49500) + 500
+	y = random(99800) + 1200
 }
 until place_meeting(x,y, oWall)
 vx = 2

@@ -42,3 +42,7 @@ if place_meeting(x, y, oTeleporter)
 	enterTP = 1
 else
 	enterTP = -1
+
+//no forcefield in bossRoom
+if room = rBOSS
+	forceFields = 0

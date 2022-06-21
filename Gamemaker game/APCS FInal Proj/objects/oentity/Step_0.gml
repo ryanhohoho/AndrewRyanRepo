@@ -48,10 +48,11 @@ if dead = 1 {
 if global.stopStep = true {
 	if image_yscale > 0 {
 		image_yscale -= 0.01
+		global.score += 5000
 	}
 	else {
 		instance_create_depth(x, y, -9, oENDSCREEN)
-		win = 1
+		global.win = 1
 		instance_destroy()
 	}
 }

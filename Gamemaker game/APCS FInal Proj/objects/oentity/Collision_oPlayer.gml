@@ -1,4 +1,3 @@
-if oPlayer.sizeX > 10 {
+if oPlayer.sizeX > 10 and oPlayer.hp > 0 {
 	dead = 1
-	global.score += 5000
 }

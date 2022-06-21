@@ -42,11 +42,13 @@ if global.stopStep = false {
 		x += vx
 		y += vy
 	}
-	if point_distance(x, y, oPlayer.x, oPlayer.y) > 3000
+	
+	//destroy code
+	if point_distance(x, y, oPlayer.x, oPlayer.y) > 15000
 		instance_destroy()
-	if image_index > 39
+	if sprite_index = sLaser and image_index > 39
 		instance_destroy()
-	if sprite_index != sLaser and image_index > 27
+	if sprite_index = sBlazeExplode and image_index > 27
 		instance_destroy()
 }
 else

@@ -8,7 +8,7 @@ do {
 	y = oPlayer.y + (random(500) + 2000)*rando
 	
 }
-until ! place_meeting(x,y, oWall) or count > 10000 and instance_nearest(x,y, oEnemy).x > 500
+until !place_meeting(x,y, oWall) or count > 10000 and instance_nearest(x,y, oEnemy).x > 500
 //Creates enemy and destroys self if can't find space nearby
 if count > 10000 {
 	instance_destroy()

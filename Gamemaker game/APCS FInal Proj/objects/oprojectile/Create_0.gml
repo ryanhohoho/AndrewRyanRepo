@@ -41,4 +41,3 @@ else if selected > 0 {
 	newY = oPlayer.y
 	image_angle = point_direction(x, y, oPlayer.x, oPlayer.y)
 }
-show_debug_message("Projectile created")

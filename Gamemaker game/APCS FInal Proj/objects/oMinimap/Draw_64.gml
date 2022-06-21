@@ -1,3 +1,4 @@
+if !global.stopStep and (oPlayer.hp > 0  and !global.win) {
 	//toggle minimap
 	if toggle {
 	//mMapPlace(color,  alpha,  var name,  obj,  id name,  size)
@@ -12,3 +13,4 @@
 	mMapPlace(c_yellow,1,playerCount,oPlayer,playerId,3)
 	draw_set_alpha(1)
 	}
+}

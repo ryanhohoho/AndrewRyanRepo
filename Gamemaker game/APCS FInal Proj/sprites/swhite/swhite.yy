@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Graphics",
+    "path": "folders/Sprites/Graphics.yy",
   },
   "resourceVersion": "1.0",
   "name": "sWhite",

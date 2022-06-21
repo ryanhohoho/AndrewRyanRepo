@@ -3,6 +3,7 @@ global.score = 0
 global.highscore = 0
 global.time = 0
 global.button = -1
+global.win = -1
 
 /* RYAN THESE ARE THE THINGS YOU NEED TO CHANGE WHEN BASEICALLY DONE.
 
