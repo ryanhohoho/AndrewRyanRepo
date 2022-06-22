@@ -7,8 +7,10 @@ if drY > 0 {
 }
 
 //getting hit if not already hit
-if instance_nearest(x,y, oEnemy).dead != 1
+if instance_nearest(x,y, oEnemy).dead != 1 {
+	audio_play_sound(nHit, 1, false)
 	downed = 1
+}
 dirX = x - instance_nearest(x,y, oEnemy).x
 //push away 
 vx = 20*sign(dirX)

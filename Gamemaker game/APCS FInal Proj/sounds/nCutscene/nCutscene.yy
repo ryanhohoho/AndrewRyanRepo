@@ -1,7 +1,7 @@
 {
   "conversionMode": 0,
   "compression": 0,
-  "volume": 1.0,
+  "volume": 0.1,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -11,8 +11,8 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "nCutscene.mp3",
-  "duration": 6.0604,
+  "soundFile": "ncutscene.wav",
+  "duration": 8.053333,
   "parent": {
     "name": "oASounds",
     "path": "folders/oASounds.yy",

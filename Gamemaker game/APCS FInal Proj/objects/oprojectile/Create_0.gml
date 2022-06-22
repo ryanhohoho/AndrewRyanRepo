@@ -25,6 +25,7 @@ else if selected > 2 {
 }
 else if selected > 1 {
 	//egg attack
+	audio_stop_sound(nBossBullet)
 	sprite_index = sBoss
 	image_xscale = 0.5
 	image_yscale = 0.5
@@ -34,6 +35,7 @@ else if selected > 1 {
 }
 else if selected > 0 {
 	//ORB ATTACK
+	audio_stop_sound(nBossBullet)
 	sprite_index = sOrb
 	image_xscale = 0.5
 	image_yscale = 0.5

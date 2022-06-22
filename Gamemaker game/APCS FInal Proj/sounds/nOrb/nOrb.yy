@@ -11,8 +11,8 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "nOrb",
-  "duration": 0.0,
+  "soundFile": "norb.wav",
+  "duration": 0.140045,
   "parent": {
     "name": "oASounds",
     "path": "folders/oASounds.yy",

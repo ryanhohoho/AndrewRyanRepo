@@ -1,9 +1,10 @@
 //different bullets
-if ! other.beenHit and hp > 0 and !view_current = view_camera[1] {
+if ! other.beenHit and hp > 0 and !view_current = 1 {
 	if other.sprite_index = sBoss {
 		//eggs give mass and hp
 		maxSize += 0.3
 		hp ++
+		audio_play_sound(nFood, 1, false)
 		global.score += 3000
 		instance_destroy(other)
 	}
@@ -11,6 +12,7 @@ if ! other.beenHit and hp > 0 and !view_current = view_camera[1] {
 		//just a projectile that takes hp
 		hp --
 		instance_destroy(other)
+		audio_play_sound(nHit, 1, false)
 	}
 	else if other.sprite_index = sBlazeExplode {
 		//big damage

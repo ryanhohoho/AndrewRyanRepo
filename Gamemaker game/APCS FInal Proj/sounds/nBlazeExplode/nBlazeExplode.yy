@@ -1,7 +1,7 @@
 {
   "conversionMode": 0,
   "compression": 0,
-  "volume": 1.0,
+  "volume": 0.07,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -11,8 +11,8 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "nBlazeExplode",
-  "duration": 0.0,
+  "soundFile": "nblazeexplode.wav",
+  "duration": 1.589417,
   "parent": {
     "name": "oASounds",
     "path": "folders/oASounds.yy",

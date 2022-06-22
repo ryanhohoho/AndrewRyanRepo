@@ -11,8 +11,10 @@ if room = rMASTER {
 	instance_create_depth(0,0, 0, oBoss)
 	instance_create_depth(0,0, 0, oBoss)
 	startPlatform()
+	audio_play_sound(nMasterTheme, -9, true)
 }
 else if room = rBOSS {
+	
 	currentWall = instance_create_depth(7500, 2900, 10, oWall)
 	for (var i = 0; i <= 1; i++) {
 		wallSpread( 2900, currentWall, 48 + rL)
@@ -20,4 +22,5 @@ else if room = rBOSS {
 	}
 	instance_create_depth(7500, 2700, 0, oPlayer)
 	instance_create_depth(oPlayer.x + 600, oPlayer.y - 200, 1, oEntity)
+	audio_play_sound(nBossTheme, -9, true)
 }

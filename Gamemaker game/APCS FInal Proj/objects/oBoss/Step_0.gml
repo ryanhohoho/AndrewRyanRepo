@@ -8,8 +8,10 @@ if rectangle_in_circle(x1, y1, x2, y2, x, y, 150) = 1 and global.stopStep =  fal
 	global.stopStep = true
 	instance_deactivate_all(1)
 	instance_activate_object(oPlayer)
+	instance_activate_object(oGlobal)
 	instance_create_depth(x,y, -1, oWhite)
 	oPlayer.depth = 1
+	audio_play_sound(nCutscene, 1, false)
 }
 //CUTSCENE TO BOSS STAGE
 if global.stopStep = true {

@@ -1,7 +1,7 @@
 {
   "conversionMode": 0,
   "compression": 0,
-  "volume": 0.48,
+  "volume": 0.66,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -11,14 +11,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "nSlimeJump.wav",
-  "duration": 1.589417,
+  "soundFile": "nmenutheme.mp3",
+  "duration": 72.562355,
   "parent": {
     "name": "oASounds",
     "path": "folders/oASounds.yy",
   },
   "resourceVersion": "1.0",
-  "name": "nSlimeJump",
+  "name": "nMenuTheme",
   "tags": [],
   "resourceType": "GMSound",
 }

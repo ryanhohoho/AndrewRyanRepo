@@ -6,5 +6,5 @@ function startPlatform(){
 	wallID = instance_find(oWall, random(instance_number-1))
 	instance_create_depth(wallID.x,wallID.y + 200, 1, oTeleporter)
 	//test is just for testing
-	//instance_create_depth(starter.x - 200,oPlayer.y, 1, oTest)
+	instance_create_depth(starter.x - 200,oPlayer.y, 1, oTest)
 }

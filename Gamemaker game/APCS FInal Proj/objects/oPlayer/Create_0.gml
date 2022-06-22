@@ -27,3 +27,5 @@ instance_create_depth(x,y, 50, oProx)
 if place_meeting(x,y, oWall) 
 	instance_destroy(other)
 
+audio_stop_all()
+

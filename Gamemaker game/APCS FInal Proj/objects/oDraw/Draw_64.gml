@@ -1,3 +1,4 @@
+
 if !global.stopStep and (oPlayer.hp > 0  and !global.win) {
 	
 	//drawing gui for forcefield and hp
@@ -33,9 +34,10 @@ if !global.stopStep and (oPlayer.hp > 0  and !global.win) {
 else {
 	draw_text_ext_transformed_color(500, 150, "SCORE: "+ string(global.score), -100, 120, 5.001, 5.001, 0, c_aqua, c_purple, c_aqua, c_purple, 1)
 	//you died
-	if oPlayer.hp <= 0 {
+	if oPlayer.hp <= 0 and !view_current = 1 {
 		draw_set_alpha(opacity)
 		draw_sprite(sDeath, 0, 0, 150)
+		draw_set_alpha(1)
 	
 	}
 }

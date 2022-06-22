@@ -2,6 +2,8 @@ function move() {
 	//jump
 	if keyboard_check(vk_space) and (place_meeting(x,y+1,oWall) or place_meeting(x + sign(vx), y, oWall)) {
 		vy=jump*sizeX
+		audio_sound_set_track_position(nJump, 0.2)
+		audio_play_sound(nJump, 1, false)
 	}
 	
 
