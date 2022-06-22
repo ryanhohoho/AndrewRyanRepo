@@ -1,4 +1,3 @@
-
 function wallPlace(wallX, wallY, currentWall){
 	randomize()
 	if instance_number(oWall) < 1000 {

@@ -2,7 +2,7 @@ if global.stopStep = false {
 	//ORB ATTACK
 	if selected > 3  {
 		//laser attack
-		//make the boss morb in place
+		//make the boss morb in place 
 		oEntity.x = baseX
 		oEntity.y = baseY + 50
 		oEntity.image_xscale = - image_xscale
