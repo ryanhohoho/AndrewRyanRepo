@@ -1,4 +1,3 @@
-/*
 if global.stopStep = true
 	exit
 // ORB FADE IN

@@ -5,4 +5,5 @@ global.score = 0
 global.button = -1
 global.win = -1
 global.deathWin = -1
+audio_stop_all()
 room_goto(rMENU)
